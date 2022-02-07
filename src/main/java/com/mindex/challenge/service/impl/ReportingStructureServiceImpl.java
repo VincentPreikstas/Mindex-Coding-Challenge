@@ -18,13 +18,6 @@ public class ReportingStructureServiceImpl implements ReportingStructureService{
     private EmployeeRepository employeeRepository;
 
     @Override
-    public String hello(){
-        LOG.debug("the service impl fired");
-
-        return "Hello World";
-    }
-
-    @Override
     public ReportingStructure read(String id){
         LOG.debug("Building Reporting Structure output for id [{}]", id);
 

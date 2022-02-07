@@ -16,13 +16,6 @@ public class ReportingStructureController {
     @Autowired
     private ReportingStructureService reportingStructureService;
 
-    @GetMapping("/reportingstructure")
-    public String hello(){
-        LOG.debug("Called my testing function");
-
-        return reportingStructureService.hello();
-    }
-
     @GetMapping("/reportingstructure/{id}")
     public ReportingStructure read(@PathVariable String id){
         LOG.debug("Received Reporting Structure request for id [{}]", id);

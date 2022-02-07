@@ -10,6 +10,12 @@ public class Compensation {
     public Compensation() {
     }
 
+    public Compensation(Employee employee){
+        this.employee = employee;
+        this.salary = employee.getSalary();
+        this.effectiveDate = employee.getEffectiveDate();
+    }
+
     public Employee getEmployee() {
         return employee;
     }

@@ -1,16 +1,11 @@
 package com.mindex.challenge.data;
 
-
 import com.mindex.challenge.dao.EmployeeRepository;
-
-
-
 import java.util.List;
 
 public class ReportingStructure {
     private Employee employee;
     private Integer numberOfReports;
-
 
     public ReportingStructure(){
 
